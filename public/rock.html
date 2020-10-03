@@ -1,72 +1,98 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>You played rock!</title>
+	<title>You played rock!</title>
+
+	<!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="/bootstrap.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
 
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
-  <meta charset="utf-8">
+<meta charset="utf-8">
 
-  <link rel="stylesheet" href="/my_styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!-- Connect Font Awesome CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+<!-- Connect Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- Connect Bootstrap JavaScript and its dependencies -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="row mb-medium">
-      <div class="one-third">
-        <a class="button" href="/rock">
-          Play Rock
-        </a>
-      </div>
+	<div class="container">
+		<div class="row mb-medium">
+			<div class="col-4">
+				<a class="btn btn-info btn-block" href="/rock">
+					Play Rock
+				</a>
+			</div>
 
-      <div class="one-third">
-        <a class="button" href="/paper">
-          Play Paper
-        </a>
-      </div>
+			<div class="col-4">
+				<a class="btn btn-outline-info btn-block" href="/paper">
+					Play Paper
+				</a>
+			</div>
 
-      <div class="one-third">
-        <a class="button" href="/scissors">
-          Play Scissors
-        </a>
-      </div>
-    </div>
+			<div class="col-4">
+				<a class="btn btn-outline-info btn-block" href="/scissors">
+					Play Scissors
+				</a>
+			</div>
+		</div>
 
-    <div class="row mb-medium">
-      <div class="one-half">
-        <div class="player-card centered">
-          <h2>
-            <em>We</em> <strong>played</strong> <a href="https:/www.google.com">rock</a>!
-          </h2>
-        </div>
-      </div>
+		<div class="row mb-medium">
+			<div class="col-md-6">
+				<div class="player-card centered">
+					<h2>
+						<em>We</em> <strong>played</strong> <a href="https:/www.google.com">rock</a>!
+					</h2>
+				</div>
+			</div>
 
-      <div class="one-half">
-        <div class="computer-card centered">
-          <h2>
-            They played paper!
-          </h2>
-        </div>
-      </div>
-    </div>
+			<div class="col-md-6">
+				<div class="computer-card centered">
+					<h2>
+						They played paper!
+					</h2>
+				</div>
+			</div>
+		</div>
 
-    <div class="row-center mb-medium">
-      <div class="two-thirds">
-        <div class="outcome-card centered">
-          <h2>
-            We lost!
-          </h2>
-        </div>
-      </div>
-    </div>
+		<div class="row mb-medium">
+      <!-- <div class="col-md-2">
+      </div> -->
 
-    <div class="row-center mb-medium">
-      <div class="full-width centered">
-        <a href="/">
-          Rules
-        </a>
-      </div>
-    </div>
-  </div>
+			<div class="offset-md-2 col-md-8">
+				<div class="outcome-card centered">
+					<h2>
+						We lost!
+					</h2>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row mb-medium">
+			<div class="col-md-12 centered">
+				<a href="/">
+					Rules
+				</a>
+			</div>
+		</div>
+	</div>
+
+  <style>
+    * { border: thin red solid; }
+  </style>
+
 </body>
+
 </html>
